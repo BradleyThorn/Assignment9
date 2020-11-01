@@ -1,0 +1,8 @@
+1. The only reason this doesn't work is because "name == "Q"" would always return false.
+   The variable "name" in this case is a String, a non-primitive type, and as such cannot 
+   be compared using ==. Instead, one would need to write something like "name.equals("Q").
+   
+2. This is essentially the same program, just with the variable "ch" add as a char.
+	Since char is a primitive type, this is a valid program and can be compared with ==.
+	It even checks to see if name is only one char long before returning true, so a name
+	like Quentin doesn't return true, only Q.
